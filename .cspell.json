@@ -1,5 +1,5 @@
 {
-  "language": "default",
+  "language": "en, de",
   "version": "0.2",
   "dictionaryDefinitions": [
     {
@@ -11,6 +11,9 @@
   "dictionaries": ["custom-words"],
   "ignorePaths": ["node_modules", "/custom-words.txt"],
   "import": [
-    "@cspell/dict-de-ch/cspell-ext.json"
+    "@cspell/dict-en_us/cspell-ext.json",
+    "@cspell/dict-de-ch/cspell-ext.json",
+    "@cspell/dict-typescript/cspell-ext.json",
+    "@cspell/dict-bash/cspell-ext.json"
   ]
 }
