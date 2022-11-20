@@ -17,9 +17,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
-    ".cspell.json"
+    ".cspell.json",
+    "custom-words.txt"
   ],
   "peerDependencies": {
+    "@cspell/dict-de-ch": "^1.0.2",
     "cspell": "^6.14.3"
   },
   "devDependencies": {

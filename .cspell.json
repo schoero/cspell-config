@@ -1,9 +1,16 @@
 {
-  "language": "en",
+  "language": "default",
   "version": "0.2",
-  "words": [
-    "schoero",
-    "schönbächler",
-    "typecheck"
+  "dictionaryDefinitions": [
+    {
+      "name": "custom-words",
+      "path": "./custom-words.txt",
+      "addWords": true
+    }
+  ],
+  "dictionaries": ["custom-words"],
+  "ignorePaths": ["node_modules", "/custom-words.txt"],
+  "import": [
+    "@cspell/dict-de-ch/cspell-ext.json"
   ]
 }
