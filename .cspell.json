@@ -1,13 +1,15 @@
 {
-  "language": "en, de",
-  "version": "0.2",
+  "dictionaries": [
+    "custom-words"
+  ],
   "dictionaryDefinitions": [
     {
+      "addWords": false,
       "name": "custom-words",
-      "path": "./custom-words.txt",
-      "addWords": false
+      "path": "./custom-words.txt"
     }
   ],
+  "ignorePaths": ["node_modules", "/custom-words.txt"],
   "import": [
     "@cspell/dict-en_us/cspell-ext.json",
     "@cspell/dict-de-ch/cspell-ext.json",
@@ -23,10 +25,8 @@
     "@cspell/dict-software-terms/cspell-ext.json",
     "@cspell/dict-public-licenses/cspell-ext.json",
     "@cspell/dict-fullstack/cspell-ext.json",
-    "@cspell/dict-companies/cspell-ext.json",
+    "@cspell/dict-companies/cspell-ext.json"
   ],
-  "dictionaries": [
-    "custom-words"
-  ],
-  "ignorePaths": ["node_modules", "/custom-words.txt"]
+  "language": "en, de",
+  "version": "0.2"
 }
