@@ -4,18 +4,25 @@
   "dictionaryDefinitions": [
     {
       "name": "custom-words",
-      "path": "./custom-words.txt",
-      "addWords": true
+      "path": "./custom-words.txt"
     }
   ],
-  "dictionaries": ["custom-words"],
-  "ignorePaths": ["node_modules", "/custom-words.txt"],
   "import": [
     "@cspell/dict-en_us/cspell-ext.json",
     "@cspell/dict-de-ch/cspell-ext.json",
     "@cspell/dict-typescript/cspell-ext.json",
+    "@cspell/dict-html/cspell-ext.json",
     "@cspell/dict-html-symbol-entities/cspell-ext.json",
     "@cspell/dict-bash/cspell-ext.json",
-    "@cspell/dict-git/cspell-ext.json"
-  ]
+    "@cspell/dict-git/cspell-ext.json",
+    "@cspell/dict-npm/cspell-ext.json",
+    "@cspell/dict-node/cspell-ext.json",
+    "@cspell/dict-css/cspell-ext.json",
+    "@cspell/dict-software-terms/cspell-ext.json",
+    "@cspell/dict-public-licenses/cspell-ext.json"
+  ],
+  "dictionaries": [
+    "custom-words"
+  ],
+  "ignorePaths": ["node_modules", "/custom-words.txt"]
 }
