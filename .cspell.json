@@ -18,6 +18,7 @@
     "@cspell/dict-npm/cspell-ext.json",
     "@cspell/dict-node/cspell-ext.json",
     "@cspell/dict-css/cspell-ext.json",
+    "@cspell/dict-markdown/cspell-ext.json",
     "@cspell/dict-software-terms/cspell-ext.json",
     "@cspell/dict-public-licenses/cspell-ext.json"
   ],
