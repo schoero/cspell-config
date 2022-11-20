@@ -9,7 +9,7 @@
       "path": "./custom-words.txt"
     }
   ],
-  "ignorePaths": ["node_modules", "/custom-words.txt", ".git"],
+  "ignorePaths": ["node_modules/**", "/custom-words.txt", ".git/**"],
   "import": [
     "@cspell/dict-en_us/cspell-ext.json",
     "@cspell/dict-de-ch/cspell-ext.json",
@@ -28,5 +28,19 @@
     "@cspell/dict-companies/cspell-ext.json"
   ],
   "language": "en, de",
+  "languageSettings": [
+    {
+      "caseSensitive": false,
+      "languageId": "typescript"
+    },
+    {
+      "caseSensitive": false,
+      "languageId": "json"
+    },
+    {
+      "caseSensitive": false,
+      "languageId": "javascript"
+    }
+  ],
   "version": "0.2"
 }
