@@ -4,7 +4,8 @@
   "dictionaryDefinitions": [
     {
       "name": "custom-words",
-      "path": "./custom-words.txt"
+      "path": "./custom-words.txt",
+      "addWords": false
     }
   ],
   "import": [
@@ -20,7 +21,8 @@
     "@cspell/dict-css/cspell-ext.json",
     "@cspell/dict-markdown/cspell-ext.json",
     "@cspell/dict-software-terms/cspell-ext.json",
-    "@cspell/dict-public-licenses/cspell-ext.json"
+    "@cspell/dict-public-licenses/cspell-ext.json",
+    "@cspell/dict-fullstack/cspell-ext.json"
   ],
   "dictionaries": [
     "custom-words"
