@@ -4,3 +4,7 @@ schoero
 Schönbächler
 typecheck
 volta
+markdownlint
+vitest
+ncpa
+shellcheck
