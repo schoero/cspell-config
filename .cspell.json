@@ -1,6 +1,7 @@
 {
   "dictionaries": [
-    "custom-words"
+    "custom-words",
+    "networking-terms"
   ],
   "dictionaryDefinitions": [
     {
@@ -9,7 +10,14 @@
       "path": "./custom-words.txt"
     }
   ],
-  "ignorePaths": ["/node_modules/", "/custom-words.txt", "/.git/"],
+  "files": [
+    "**/{*,.*}/**/*"
+  ],
+  "ignorePaths": [
+    "node_modules",
+    "/custom-words.txt",
+    ".git"
+  ],
   "import": [
     "@cspell/dict-en_us/cspell-ext.json",
     "@cspell/dict-de-ch/cspell-ext.json",
@@ -17,7 +25,6 @@
     "@cspell/dict-html/cspell-ext.json",
     "@cspell/dict-html-symbol-entities/cspell-ext.json",
     "@cspell/dict-bash/cspell-ext.json",
-    "@cspell/dict-git/cspell-ext.json",
     "@cspell/dict-npm/cspell-ext.json",
     "@cspell/dict-node/cspell-ext.json",
     "@cspell/dict-css/cspell-ext.json",
@@ -28,18 +35,15 @@
     "@cspell/dict-companies/cspell-ext.json"
   ],
   "language": "en, de",
-  "languageSettings": [
+  "overrides": [
     {
       "caseSensitive": false,
-      "languageId": "typescript"
-    },
-    {
-      "caseSensitive": false,
-      "languageId": "json"
-    },
-    {
-      "caseSensitive": false,
-      "languageId": "javascript"
+      "dictionaryDefinitions": [
+        {
+          "name": "companies",
+          "path": "@cspell/dict-companies/dict/companies.txt"
+        }
+      ]
     }
   ],
   "version": "0.2"
