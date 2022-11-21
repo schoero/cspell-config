@@ -1,4 +1,14 @@
-{
+import { getDefaultSettings } from "cspell-lib";
+
+const defaultSettings = getDefaultSettings();
+
+export default {
+  "ignoreRegExpList": defaultSettings.ignoreRegExpList,
+  "patterns": defaultSettings.patterns,
+  "maxNumberOfProblems": defaultSettings.maxNumberOfProblems,
+  "numSuggestions": defaultSettings.numSuggestions,
+  "suggestionsTimeout": defaultSettings.suggestionsTimeout,
+  "suggestionNumChanges": defaultSettings.suggestionNumChanges,
   "dictionaries": [
     "names",
     "vscode",
@@ -27,10 +37,6 @@
     "**/lib/**",
     "package-lock.json"
   ],
-  // ignore links
-  "ignoreRegExpList": [
-    "https?://(www.)?[-a-zA-Z0-9@:%._+~#=]{1,256}.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&//=]*)"
-  ],
   "import": [
     "@cspell/dict-en_us/cspell-ext.json",
     "@cspell/dict-de-ch/cspell-ext.json",
@@ -48,5 +54,6 @@
     "@cspell/dict-companies/cspell-ext.json"
   ],
   "language": "en, de",
+  "loadDefaultConfiguration": false,
   "version": "0.2"
 }

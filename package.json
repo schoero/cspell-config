@@ -1,5 +1,6 @@
 {
   "version": "1.2.8",
+  "type": "module",
   "name": "@schoero/cspell-config",
   "description": "Personal cspell config",
   "license": "MIT",
@@ -12,12 +13,12 @@
   "bugs": {
     "url": "https://github.com/schoero/cspell-config/issues"
   },
-  "main": ".cspell.json",
+  "main": "cspell.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
-    ".cspell.json",
+    "cspell.config.js",
     "dict"
   ],
   "peerDependencies": {

@@ -1,3 +1,4 @@
 {
-  "extends": "@schoero"
+  "extends": "@schoero",
+  "sourceType": "module"
 }
