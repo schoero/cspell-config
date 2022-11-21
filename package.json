@@ -13,13 +13,13 @@
   "bugs": {
     "url": "https://github.com/schoero/cspell-config/issues"
   },
-  "main": "cspell.config.js",
+  "main": "lib/.cspell.json",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm -rf lib && mkdir lib && cp -R src/dict lib/dict && node src/create-config.js > lib/.cspell.json",
+    "prepublish": "npm run build"
   },
   "files": [
-    "cspell.config.js",
-    "dict"
+    "lib"
   ],
   "peerDependencies": {
     "@cspell/dict-bash": "^4.1.0",
@@ -39,7 +39,8 @@
     "cspell": "^6.14.3"
   },
   "devDependencies": {
-    "@schoero/eslint-config": "^1.22.0",
-    "@schoero/markdownlint-config": "^1.1.2"
+    "@schoero/eslint-config": "^1.26.4",
+    "@schoero/markdownlint-config": "^1.1.2",
+    "@types/node": "^18.11.9"
   }
 }

@@ -1,35 +1,30 @@
 import { getDefaultSettings } from "cspell-lib";
 
+
 const defaultSettings = getDefaultSettings();
 
-export default {
-  "ignoreRegExpList": defaultSettings.ignoreRegExpList,
-  "patterns": defaultSettings.patterns,
-  "maxNumberOfProblems": defaultSettings.maxNumberOfProblems,
-  "numSuggestions": defaultSettings.numSuggestions,
-  "suggestionsTimeout": defaultSettings.suggestionsTimeout,
-  "suggestionNumChanges": defaultSettings.suggestionNumChanges,
-  "dictionaries": [
+process.stdout.write(JSON.stringify({
+  dictionaries: [
     "names",
     "vscode",
     "networking-terms"
   ],
-  "dictionaryDefinitions": [
+  dictionaryDefinitions: [
     {
-      "addWords": false,
-      "name": "names",
-      "path": "./dict/names.txt"
+      addWords: false,
+      name: "names",
+      path: "./dict/names.txt"
     },
     {
-      "addWords": false,
-      "name": "vscode",
-      "path": "./dict/vscode.txt"
+      addWords: false,
+      name: "vscode",
+      path: "./dict/vscode.txt"
     }
   ],
-  "files": [
+  files: [
     "**/{*,.*}/**/*"
   ],
-  "ignorePaths": [
+  ignorePaths: [
     "**/node_modules/**",
     "**/vscode-extension/**",
     "**/.git/**",
@@ -37,7 +32,8 @@ export default {
     "**/lib/**",
     "package-lock.json"
   ],
-  "import": [
+  ignoreRegExpList: defaultSettings.ignoreRegExpList,
+  import: [
     "@cspell/dict-en_us/cspell-ext.json",
     "@cspell/dict-de-ch/cspell-ext.json",
     "@cspell/dict-typescript/cspell-ext.json",
@@ -53,7 +49,12 @@ export default {
     "@cspell/dict-fullstack/cspell-ext.json",
     "@cspell/dict-companies/cspell-ext.json"
   ],
-  "language": "en, de",
-  "loadDefaultConfiguration": false,
-  "version": "0.2"
-}
+  language: "en, de",
+  loadDefaultConfiguration: false,
+  maxNumberOfProblems: defaultSettings.maxNumberOfProblems,
+  numSuggestions: defaultSettings.numSuggestions,
+  patterns: defaultSettings.patterns,
+  suggestionNumChanges: defaultSettings.suggestionNumChanges,
+  suggestionsTimeout: defaultSettings.suggestionsTimeout,
+  version: "0.2"
+}, null, 2));
