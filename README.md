@@ -4,7 +4,8 @@ Personal cspell config
 
 ## Key features
 
-* Spell check any files
+* Spell checks all files
+* Supports American english and german languages
 
 ### Installation
 
@@ -19,7 +20,10 @@ Create a `.cspell.json` file with the following content:
 ```jsonc
 {
   "import": [
-    "node_modules/@schoero/cspell-config/.cspell.json"
+    "@schoero/cspell-config"
+  ],
+  "words": [
+    // Add your custom words here
   ]
 }
 ```
@@ -43,7 +47,8 @@ If you want to have spellcheck scripts, you can use something like this in the `
 ```jsonc
 {
   "scripts": {
-    "spellcheck": "node_modules/.bin/cspell **"
+    "spellcheck": "node_modules/.bin/cspell lint",
+    "spellcheck:ci": "npm run spellcheck -- --no-progress"
   }
 }
 ```
