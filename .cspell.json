@@ -1,13 +1,19 @@
 {
   "dictionaries": [
-    "custom-words",
+    "names",
+    "vscode",
     "networking-terms"
   ],
   "dictionaryDefinitions": [
     {
       "addWords": false,
-      "name": "custom-words",
-      "path": "./custom-words.txt"
+      "name": "names",
+      "path": "./dict/names.txt"
+    },
+    {
+      "addWords": false,
+      "name": "vscode",
+      "path": "./dict/vscode.txt"
     }
   ],
   "files": [
@@ -17,9 +23,13 @@
     "**/node_modules/**",
     "**/vscode-extension/**",
     "**/.git/**",
-    ".vscode",
-    "package-lock.json",
-    "**/lib/**"
+    "**/.vscode/**",
+    "**/lib/**",
+    "package-lock.json"
+  ],
+  // ignore links
+  "ignoreRegExpList": [
+    "https?://(www.)?[-a-zA-Z0-9@:%._+~#=]{1,256}.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&//=]*)"
   ],
   "import": [
     "@cspell/dict-en_us/cspell-ext.json",
@@ -38,17 +48,5 @@
     "@cspell/dict-companies/cspell-ext.json"
   ],
   "language": "en, de",
-  "overrides": [
-    {
-      "caseSensitive": false,
-      "dictionaryDefinitions": [
-        {
-          "name": "companies",
-          "path": "@cspell/dict-companies/dict/companies.txt"
-        }
-      ],
-      "filename": "*"
-    }
-  ],
   "version": "0.2"
 }
