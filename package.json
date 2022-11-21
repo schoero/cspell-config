@@ -18,7 +18,7 @@
   },
   "files": [
     ".cspell.json",
-    "custom-words.txt"
+    "dict"
   ],
   "peerDependencies": {
     "@cspell/dict-bash": "^4.1.0",
