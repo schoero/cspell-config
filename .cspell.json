@@ -14,9 +14,12 @@
     "**/{*,.*}/**/*"
   ],
   "ignorePaths": [
-    "node_modules",
-    "/custom-words.txt",
-    ".git"
+    "**/node_modules/**",
+    "**/vscode-extension/**",
+    "**/.git/**",
+    ".vscode",
+    "package-lock.json",
+    "**/lib/**"
   ],
   "import": [
     "@cspell/dict-en_us/cspell-ext.json",
@@ -43,7 +46,8 @@
           "name": "companies",
           "path": "@cspell/dict-companies/dict/companies.txt"
         }
-      ]
+      ],
+      "filename": "*"
     }
   ],
   "version": "0.2"
