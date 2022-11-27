@@ -8,3 +8,4 @@ markdownlint
 vitest
 ncpa
 shellcheck
+JSDelivr
