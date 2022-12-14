@@ -2,3 +2,4 @@ ideographic
 mathematical
 nonzero
 evenodd
+tspan
