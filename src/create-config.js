@@ -38,7 +38,10 @@ process.stdout.write(JSON.stringify({
     "**/lib/**",
     "package-lock.json"
   ],
-  ignoreRegExpList: defaultSettings.ignoreRegExpList,
+  ignoreRegExpList: [
+    ...defaultSettings.ignoreRegExpList,
+    "\\[.*\\]\\(.*#(.*)\\)" // Markdown anchor links
+  ],
   import: [
     "@cspell/dict-en_us/cspell-ext.json",
     "@cspell/dict-de-ch/cspell-ext.json",
