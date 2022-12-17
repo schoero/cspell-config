@@ -37,6 +37,9 @@ process.stdout.write(JSON.stringify({
     "**/.vscode/**",
     "**/lib/**",
     "package-lock.json"
+    "package-lock.json",
+    "yarn.lock",
+    "pnpm-lock.yaml"
   ],
   ignoreRegExpList: [
     ...defaultSettings.ignoreRegExpList,
