@@ -36,7 +36,8 @@ process.stdout.write(JSON.stringify({
     "**/.git/**",
     "**/.vscode/**",
     "**/lib/**",
-    "*.snap",
+    "**/__snapshots__/**",
+    "**/*.snap",
     "package-lock.json",
     "yarn.lock",
     "pnpm-lock.yaml"
