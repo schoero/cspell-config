@@ -5,6 +5,7 @@ Schönbächler
 typecheck
 volta
 markdownlint
+vite
 vitest
 ncpa
 shellcheck
