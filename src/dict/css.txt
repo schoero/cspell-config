@@ -1,0 +1,8 @@
+vmin
+vmax
+lvmin
+lvmax
+svmin
+svmax
+dvmin
+dvmax
