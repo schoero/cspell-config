@@ -9,6 +9,7 @@ process.stdout.write(JSON.stringify({
     "vscode",
     "svg",
     "css",
+    "html",
     "networking-terms"
   ],
   dictionaryDefinitions: [
@@ -26,6 +27,11 @@ process.stdout.write(JSON.stringify({
       addWords: false,
       name: "css",
       path: "./dict/css.txt"
+    },
+    {
+      addWords: false,
+      name: "html",
+      path: "./dict/html.txt"
     },
     {
       addWords: false,
