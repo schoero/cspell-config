@@ -1,5 +1,5 @@
 {
-  "version": "1.6.7",
+  "version": "1.6.8",
   "type": "module",
   "name": "@schoero/cspell-config",
   "description": "Personal cspell config",
