@@ -10,3 +10,4 @@ vitest
 ncpa
 shellcheck
 JSDelivr
+tsdoc
