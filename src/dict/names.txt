@@ -11,3 +11,5 @@ ncpa
 shellcheck
 JSDelivr
 tsdoc
+qwik
+Qwik
