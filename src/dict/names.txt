@@ -14,3 +14,5 @@ tsdoc
 qwik
 Qwik
 unwritten
+vercel
+github
