@@ -6,3 +6,4 @@ svmin
 svmax
 dvmin
 dvmax
+nowrap
