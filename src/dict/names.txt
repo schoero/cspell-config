@@ -20,3 +20,6 @@ tailwindcss
 shiki
 stackblitz
 changelogen
+minimatch
+jsdoc
+tsdoc
