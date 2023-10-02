@@ -6,6 +6,7 @@ const defaultSettings = getDefaultSettings();
 process.stdout.write(JSON.stringify({
   dictionaries: [
     "names",
+    "npm",
     "vscode",
     "svg",
     "css",
@@ -17,6 +18,11 @@ process.stdout.write(JSON.stringify({
       addWords: false,
       name: "names",
       path: "./dict/names.txt"
+    },
+    {
+      addWords: false,
+      name: "npm",
+      path: "./dict/npm.txt"
     },
     {
       addWords: false,
