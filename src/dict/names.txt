@@ -25,3 +25,4 @@ jsdoc
 tsdoc
 rollup
 rolldown
+browserify
