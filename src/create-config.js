@@ -73,6 +73,7 @@ process.stdout.write(JSON.stringify({
     "@cspell/dict-bash/cspell-ext.json",
     "@cspell/dict-npm/cspell-ext.json",
     "@cspell/dict-node/cspell-ext.json",
+    "@cspell/dict-lorem-ipsum/cspell-ext.json",
     "@cspell/dict-css/cspell-ext.json",
     "@cspell/dict-markdown/cspell-ext.json",
     "@cspell/dict-software-terms/cspell-ext.json",
