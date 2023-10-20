@@ -11,7 +11,8 @@ process.stdout.write(JSON.stringify({
     "svg",
     "css",
     "html",
-    "networking-terms"
+    "networking-terms",
+    "lorem-ipsum"
   ],
   dictionaryDefinitions: [
     {
