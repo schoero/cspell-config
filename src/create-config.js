@@ -63,7 +63,10 @@ process.stdout.write(JSON.stringify({
   ],
   ignoreRegExpList: [
     ...defaultSettings.ignoreRegExpList,
-    "\\[.*\\]\\(.*#(.*)\\)" // Markdown anchor links
+    // Markdown anchor links
+    "\\[.*\\]\\(.*#(.*)\\)",
+    // GitHub mentions
+    "@[a-zA-Z0-9-]+"
   ],
   import: [
     "@cspell/dict-en_us/cspell-ext.json",
