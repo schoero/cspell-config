@@ -40,8 +40,8 @@
     "cspell": "^7.3.7"
   },
   "devDependencies": {
-    "@schoero/eslint-config": "^1.41.20",
+    "@schoero/eslint-config": "^1.42.0",
     "@schoero/markdownlint-config": "^1.1.7",
-    "@types/node": "^20.8.7"
+    "@types/node": "^20.9.0"
   }
 }
